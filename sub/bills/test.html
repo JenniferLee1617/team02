@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            display: none;
+        }
+
+        li.on {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <input type="button" name="" value="추가">
+
+    <script>
+
+        var a = 0;
+        $('input').on('click', function () {
+            $('li').eq(a).addClass('on');
+            a = a + 1;
+
+            if (c == 'on') {
+                $('input').hide();
+            }
+            return a;
+        });
+        c = $('li').last().attr('class');
+    </script>
+</body>
+
+</html>
