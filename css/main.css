@@ -1,0 +1,877 @@
+@charset "utf-8";
+
+
+
+button {
+  cursor: pointer;
+}
+
+
+.main-wrap {
+  /* <-이 안에 다 집어 넣으십쇼 이름은 자기 성 + wrap */
+  position: relative;
+  height: 100vh;
+  /* overflow-y: hidden; */
+
+  /* main-top */
+  .main-top {
+    height: 280px;
+  }
+
+  .main-top .inner {
+    width: 100%;
+    height: 100%;
+    background: url(../img/common/img-main-bg.png) no-repeat center 20%;
+    padding-bottom: 200px;
+  }
+
+  .top-info {
+    padding: 14px 0;
+    /* padding: 14px 16px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .people-info a {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .people-info a h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .top-menu {
+    display: flex;
+    gap: 12px;
+  }
+
+  .main-tit h3 {
+    margin-top: -12px;
+    padding: 8px 4px;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .main-tit strong {
+    font-weight: 700;
+  }
+
+  /* #main */
+  #main {
+    width: 100%;
+    position: absolute;
+    top: 129px;
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    .inner {
+      padding: 28px 16px 8px;
+    }
+  }
+
+  /* #notice */
+  #notice {
+    border: 1px solid var(--font-eee);
+    border-radius: 12px;
+
+    .inner {
+      padding: 16px;
+    }
+  }
+
+  .notice-tit a {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+
+    }
+  }
+
+  .notice-txt {
+    margin-top: 12px;
+    height: 28px;
+  }
+
+  .notice-txt ul li {
+    height: 28px;
+  }
+
+  .notice-txt ul li a {
+    display: flex;
+    align-items: flex-start;
+
+
+    h4 {
+      font-size: 1.8rem;
+      color: var(--main-blue);
+      font-weight: 600;
+      padding: 0 10px 0 2px;
+    }
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+
+  /* #service */
+  #service {
+    margin: 20px 0;
+    border: 1px solid var(--font-eee);
+    border-radius: 12px;
+
+    .inner {
+      padding: 16px 16px 5px;
+    }
+  }
+
+  .service-tit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+
+  .service-txt {
+    display: flex;
+
+    div {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 500;
+      width: calc(100% / 4);
+      padding: 12px 0 10px;
+
+      img {
+        height: 36px;
+      }
+
+      p {
+        line-height: 1.2;
+        padding-top: 13px;
+      }
+    }
+  }
+
+  /* #btn-menu */
+  #btn-menu {
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .left-box {
+    width: calc(100% / 2);
+    height: 100%;
+  }
+
+  .cash-menu {
+    width: 100%;
+    height: calc((100% - 12px) / 2);
+    border: 1px solid var(--font-eee);
+    border-radius: 12px;
+    padding: 14px 0 0 16px;
+    background: #FFF8F9 url(../img/common/img-main-cash.png) no-repeat bottom right 3px;
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+
+  .reservation-menu {
+    width: 100%;
+    height: calc((100% - 12px) / 2);
+    padding: 14px 16px;
+    margin-top: 12px;
+    border: 1px solid var(--font-eee);
+    border-radius: 12px;
+    background: #F1F8FF;
+
+    .reservation-tit {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+
+      span {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 3px 10px 2px;
+        background: var(--main-blue);
+        color: #fff;
+        border-radius: 50px;
+      }
+    }
+
+    p {
+      padding-top: 11px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 112px;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+
+  .right-box {
+    width: calc(100% / 2);
+    height: 100%;
+    padding: 15px 13px;
+    border: 1px solid var(--font-eee);
+    border-radius: 12px;
+
+    .reservation-tit {
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+    }
+
+    .img-box {
+      width: 100%;
+      height: 110px;
+      /* 확인!!!! */
+      margin-top: 11px;
+      border-radius: 12px;
+      background: url(../img/common/img-main-activity.png) no-repeat center / cover;
+    }
+  }
+
+  /* 공통 tit */
+  .tit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+  }
+
+  /* 햄버거메뉴 */
+  .ham-list {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: #fff;
+    z-index: 200;
+    display: none;
+  }
+
+  .ham-list .ham-menu {
+    display: flex;
+    gap: 12px;
+  }
+
+  .ham-list .ham-menu a img {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .ham-list .inner {
+    margin: 0 16px;
+  }
+
+  /* 햄버거 수급자정보 */
+  .ham-info a {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px 10px;
+    border: 1px solid var(--font-eee);
+    border-radius: 12px;
+    margin: 15px 0 11px;
+  }
+
+  .ham-info a .ham-people {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ham-info .ham-people h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .ham-info .ham-people p {
+    font-size: 1.6rem;
+    color: #666;
+  }
+
+  /* 상단 공지사항 */
+  .h-notice {
+    height: 53px;
+    background: #F9F9F9;
+    border-radius: 12px;
+  }
+
+  .h-notice li {
+    height: 53px;
+  }
+
+  .h-notice a {
+    display: block;
+    padding: 12px 16px;
+  }
+
+  .h-notice .h-notice01 a {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .h-notice .h-notice01 a h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--main-blue);
+    padding: 0px 10px 0 2px;
+  }
+
+  .h-notice .h-notice01 a p {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  /* 햄버거 콘텐츠 */
+  .ham-content {
+    margin: 30px 0;
+  }
+
+  .ham-content div a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .ham-content div a .con-tit {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .ham-content div a .con-tit h4 {
+    font-weight: 500;
+  }
+
+  /* 알림페이지 */
+  .alram {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 200;
+    background: #fff;
+    display: none;
+  }
+
+  /* 공통 */
+  .tit-left {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+  }
+
+  h2 {
+    padding-left: 8px;
+  }
+
+  .alram .inner {
+    width: 100%;
+    height: 100vh;
+    padding: 10px 16px;
+    background: #F5F5F5;
+  }
+
+  .alram h3 {
+    padding: 12px 0;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .alram-box {
+    padding: 20px 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 10%);
+    border-radius: 12px;
+    background: #fff;
+    gap: 20px;
+  }
+
+  .alram-box.active {
+    opacity: 0.5;
+  }
+
+  .alram-box .alram-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .alram-box .alram-top h4 {
+    font-size: 1.8rem;
+    color: var(--main-blue);
+    font-weight: 600;
+  }
+
+  .alram-box .alram-top .alram-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .alram-box .alram-top .alram-right small {
+    font-size: 1.4rem;
+    padding-bottom: 2px;
+  }
+
+  .alram-box strong a {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 90%;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .before-alram {
+    margin-top: 30px;
+  }
+
+  .before-alram .alram-box {
+    margin-bottom: 12px;
+  }
+
+  .cancle-bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    display: none;
+  }
+
+  .cancle-con {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    padding: 30px 20px 20px;
+    background: #ffff;
+    border-radius: 12px;
+    z-index: 1000;
+    text-align: center;
+    display: none;
+  }
+
+  .cancle-con h3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .cancle-con p {
+    font-size: 1.6rem;
+    padding: 20px 0;
+  }
+
+  .cancle-con .button {
+    display: flex;
+    gap: 10px;
+  }
+
+  .cancle-con .button button {
+    width: 112px;
+    height: 44px;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+
+  .cancle-con .button .no {
+    border: 1px solid var(--main-blue);
+    background: #fff;
+    color: var(--main-blue);
+  }
+
+  .cancle-con .button .yes {
+    background: var(--main-blue);
+    color: #fff;
+  }
+
+}
+
+/* 메인-삭제하지마삼 */
+
+
+
+@media(min-width: 320px) and (max-width: 325px) {
+  .main-wrap {
+    .service-txt p {
+      font-size: 1.2rem;
+    }
+
+    .right-box {
+      padding: 15px 11px !important;
+    }
+  }
+}
+
+@media(min-width: 320px) and (max-width: 337px) {
+  .main-wrap {
+    .reservation-menu .reservation-tit span {
+      font-size: 1.2rem !important;
+      padding: 2px 8px 1px;
+    }
+  }
+}
+
+
+@media(min-width:540px) {
+  .main-wrap {
+    .top-info {
+      padding: 19px 0;
+      align-items: center;
+
+      .people-info {
+        img {
+          width: 44px;
+          height: 44px;
+        }
+
+        a {
+          gap: 12px;
+
+          h2 {
+            font-size: 2.8rem;
+          }
+        }
+      }
+    }
+
+    .top-menu {
+      gap: 20px;
+
+      a img {
+        width: 32px;
+        height: 32px;
+      }
+
+      .btn-alram img {
+        width: 32px;
+        height: 32px;
+      }
+
+      .btn-ham img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    .main-tit h3 {
+      padding: 24px 56px;
+      font-size: 3rem;
+    }
+
+    #main {
+      top: 240px;
+
+      .inner {
+        padding: 40px 80px 87px;
+      }
+
+      #notice {
+        .inner {
+          padding: 20px;
+        }
+
+        .notice-tit a {
+          h3 {
+            font-size: 2.2rem;
+          }
+
+          img {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+
+      .notice-txt {
+        margin-top: 20px;
+        height: 30px;
+      }
+
+      .notice-txt ul li {
+        height: 30px;
+      }
+
+      .notice-txt ul li a {
+
+
+        img {
+          width: 28px;
+          height: 28px;
+          margin-bottom: 2px;
+        }
+
+        h4 {
+          font-size: 2.2rem;
+          padding: 0 20px 0 4px;
+        }
+
+        p {
+          font-size: 2.2rem;
+        }
+      }
+
+      #service {
+        .inner {
+          padding: 20px 20px;
+        }
+
+        .service-tit {
+          margin-bottom: 20px;
+
+          h3 {
+            font-size: 2.2rem;
+          }
+
+          img {
+            width: 28px;
+            height: 28px;
+          }
+        }
+
+        .service-txt {
+          div {
+            padding: 0 5px;
+          }
+
+          img {
+            height: 54px;
+          }
+
+          p {
+            font-size: 1.6rem;
+            padding-top: 20px;
+          }
+        }
+      }
+
+      #btn-menu {
+        height: 232px;
+        gap: 20px;
+
+        .left-box {
+          width: calc(100% / 2.3);
+        }
+
+        .right-box {
+          width: calc(100% - (100% / 2.3));
+          padding: 16px 20px;
+
+          .img-box {
+            height: 160px;
+          }
+        }
+
+        h3 {
+          font-size: 2.2rem;
+        }
+
+        .cash-menu {
+          background-size: 25%;
+          padding: 20px;
+        }
+
+        .reservation-menu {
+          padding: 20px;
+
+          .reservation-tit {
+            gap: 4px;
+          }
+
+          p {
+            font-size: 1.6rem;
+            max-width: 143px;
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+
+    /* 공통 tit*/
+    .tit {
+      padding: 19px 24px;
+    }
+
+    .tit h2 {
+      font-size: 2.8rem;
+    }
+
+    .tit .ham-menu {
+      gap: 20px;
+    }
+
+    /* 햄버거메뉴 */
+    .ham-list .ham-menu button img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .ham-list .inner {
+      margin: 0 56px;
+    }
+
+    .ham-info a {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin: 40px 0 25px;
+    }
+
+    .ham-info .ham-people {
+      gap: 20px;
+    }
+
+    .ham-info .ham-people img {
+      width: 79px;
+      height: 79px;
+    }
+
+    .ham-info .ham-people h3 {
+      font-size: 2.2rem;
+    }
+
+    .ham-info .ham-people p {
+      font-size: 2rem;
+    }
+
+    .ham-info img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .h-notice a {
+      padding: 20px;
+    }
+
+    .h-notice a img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .h-notice .h-notice01 a h4 {
+      font-size: 2.2rem;
+      padding: 0 10px 0 2px;
+    }
+
+    .h-notice .h-notice01 a p {
+      font-size: 2.2rem;
+    }
+
+    .ham-content div a {
+      padding: 26px 20px;
+    }
+
+    .ham-content div a img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .ham-content div a .con-tit h4 {
+      font-size: 2rem;
+    }
+
+    /* //main */
+
+    /* 알림페이지 */
+    .tit-left {
+      padding: 22px 24px;
+    }
+
+    .tit-left img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .alram .inner {
+      padding: 40px 80px !important;
+    }
+
+    .alram h3 {
+      font-size: 2.2rem;
+      padding: 14px 0;
+      margin-bottom: 0;
+    }
+
+    .alram-box {
+      padding: 40px 20px;
+    }
+
+    .alram-box img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .alram-box .alram-top h4 {
+      font-size: 2.2rem;
+    }
+
+    .alram-box .alram-top .alram-right small {
+      font-size: 1.8rem;
+      padding-bottom: 0;
+    }
+
+    .alram-box strong a {
+      font-size: 2.2rem;
+    }
+
+    .before-alram {
+      margin-top: 24px;
+    }
+
+    /* 확인 팝업 */
+    .cancle-con h3 {
+      font-size: 2.8rem;
+    }
+
+    .cancle-con p {
+      font-size: 2.4rem;
+      padding: 41px 0;
+    }
+
+    .cancle-con .button button {
+      width: 177px;
+      height: 66px;
+      font-size: 2rem;
+    }
+
+  }
+}

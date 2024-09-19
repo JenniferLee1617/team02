@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@media (min-width:540px) {
+  .inner {
+    padding: 0 24px;
+  }
+  .nav-inner {
+    padding: 0 80px;
+  }
+  .main-inner {
+    padding: 40px 80px;
+  }
+}
