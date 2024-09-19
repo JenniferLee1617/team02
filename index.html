@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아르고스스마트케어</title>
+  <link rel="shortcut icon" href="img/common/argosFavicon.svg" type="image/x-icon">
+  <!-- font -->
+  <link rel="stylesheet" href="font/font.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- js -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body style="overflow: hidden;">
+  <div id="common-wrap" class="main-wrap"> <!-- 각자 이름 변경 하시오 -->
+    <!-- main-top -->
+    <div class="main-top">
+      <div class="inner">
+        <div class="top-info">
+          <div class="people-info">
+            <a href="#">
+              <img src="img/common/img-people.png" alt="수급자 이미지">
+              <h2>김수급님</h2> <!-- 각자 이름 변경 하시오 -->
+            </a>
+          </div>
+          <div class="top-menu">
+            <button class="btn-alram">
+              <img src="img/icon/icon-alram-wh.svg" alt="알림 아이콘">
+            </button>
+            <button class="btn-ham">
+              <img src="img/icon/icon-ham.svg" alt="햄버거(전체메뉴) 아이콘">
+            </button>
+          </div>
+        </div>
+        <div class="main-tit">
+          <h3>반갑습니다 <strong>김보호</strong>님!<br>오늘도 좋은 하루되세요</h3>
+        </div>
+      </div>
+    </div>
+    <!-- //main-top -->
+
+    <!-- main -->
+    <div id="main">
+      <div class="inner">
+
+        <!-- notice -->
+        <section id="notice">
+          <div class="inner">
+            <div class="notice-tit">
+              <a href="#">
+                <h3>이번달 공지</h3>
+                <img src="img/icon/icon-arrow-right.svg" alt="오른쪽 화살표">
+              </a>
+            </div>
+            <div class="swiper notice-txt">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide notice01">
+                  <a href="#">
+                    <img src="img/icon/icon-notice-blue.svg" alt="공지사항 아이콘">
+                    <h4>소식지</h4>
+                    <p>추석 맞이 공지사항</p>
+                  </a>
+                </li>
+                <li class="swiper-slide notice02">
+                  <a href="#">
+                    <img src="img/icon/icon-notice-blue.svg" alt="공지사항 아이콘">
+                    <h4>프로그램</h4>
+                    <p>9월 프로그램 시간표</p>
+                  </a>
+                </li>
+                <li class="swiper-slide notice01">
+                  <a href="#">
+                    <img src="img/icon/icon-notice-blue.svg" alt="공지사항 아이콘">
+                    <h4>식단표</h4>
+                    <p>9월 1주차 식단표</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- //notice -->
+
+        <!-- service -->
+        <section id="service">
+          <a href="sub/serviceRecords/service.html">
+            <div class="inner">
+              <div class="service-tit">
+                <h3>급여제공기록</h3>
+                <img src="img/icon/icon-arrow-right.svg" alt="오른쪽 화살표">
+              </div>
+              <div class="service-txt">
+                <div class="service01">
+                  <img src="img/common/main-service_01.png" alt="급여제공기록-신체활동지원">
+                  <p>신체 활동<br>지원</p>
+                </div>
+                <div class="service02">
+                  <img src="img/common/main-service_02.png" alt="급여제공기록-인지관리 및 의사소통">
+                  <p>인지관리 및<br>의사소통</p>
+                </div>
+                <div class="service03">
+                  <img src="img/common/main-service_03.png" alt="급여제공기록-건강 및 간호관리">
+                  <p>건강 및<br>간호관리</p>
+                </div>
+                <div class="service04">
+                  <img src="img/common/main-service_04.png" alt="급여제공기록-기능 회복 훈련">
+                  <p>기능 회복<br>훈련</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
+        <!-- //service -->
+
+        <!-- btn-menu -->
+        <section id="btn-menu">
+          <div class="left-box">
+            <a href="sub/bills/bill_01.html">
+              <div class="cash-menu">
+                <h3>청구/입금내역</h3>
+              </div>
+            </a>
+            <div class="reservation-menu">
+              <a href="sub/reservation/reservation_01.html">
+                <div class="reservation-tit">
+                  <h3>예약내역</h3>
+                  <span>면회</span>
+                </div>
+                <p>2023.09.13 14:00</p>
+              </a>
+            </div>
+          </div>
+          <div class="right-box">
+            <a href="#">
+              <div class="reservation-tit">
+                <h3>오늘의 일지</h3>
+                <img src="img/icon/icon-arrow-right.svg" alt="오른쪽 화살표">
+              </div>
+              <div class="img-box">
+              </div>
+            </a>
+          </div>
+        </section>
+        <!-- btn-menu -->
+      </div>
+    </div>
+    <!-- bottom-nav -->
+    <nav id="bottom-nav">
+      <ul class="gnb">
+        <li class="active">
+          <a href="index.html">
+            <img src="img/icon/icon-home.svg" alt="홈 아이콘">
+            홈
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon/icon-calendar.svg" alt="홈 아이콘">
+            예약
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon/icon-cash.svg" alt="홈 아이콘">
+            청구/입금
+          </a>
+        </li>
+        <li>
+          <a href="sub/mypage/mypage_01.html">
+            <img src="img/icon/icon-mypage.svg" alt="홈 아이콘">
+            마이페이지
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 햄버거메뉴 -->
+    <div class="ham-list">
+      <div class="tit">
+        <h2>전체메뉴</h2>
+        <div class="ham-menu">
+          <button class="btn-alram">
+            <img src="img/icon/icon-alram-bl.svg" alt="알람 아이콘">
+          </button>
+          <button class="btn-clear">
+            <img src="img/icon/icon-clear.svg" alt="나가기 아이콘">
+          </button>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="ham-info">
+          <a href="sub/mypage/mypage_01.html">
+            <div class="ham-people">
+              <img src="img/common/img-ham-people.png" alt="수급자 이미지">
+              <div class="people-info">
+                <h3>김수급님</h3>
+                <p>1945.10.10.503호</p>
+              </div>
+            </div>
+            <img src="img/icon/icon-arrow-right.svg" alt="오른쪽 화살표">
+          </a>
+        </div>
+        <div class="swiper h-notice">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide h-notice01">
+              <a href="#">
+                <img src="img/icon/icon-notice-blue.svg" alt="공지사항 아이콘">
+                <h4>소식지</h4>
+                <p>요양원 일지 안내</p>
+              </a>
+            </li>
+            <li class="swiper-slide h-notice01">
+              <a href="#">
+                <img src="img/icon/icon-notice-blue.svg" alt="공지사항 아이콘">
+                <h4>프로그램</h4>
+                <p>9월 프로그램 시간표</p>
+              </a>
+            </li>
+            <li class="swiper-slide h-notice01">
+              <a href="#">
+                <img src="img/icon/icon-notice-blue.svg" alt="공지사항 아이콘">
+                <h4>식단표</h4>
+                <p>9월 1주차 식단표</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ham-content">
+          <div class="con-01">
+            <a href="sub/reservation/reservation_01.html">
+              <div class="con-tit">
+                <img src="img/icon/icon-calendar.svg" alt="예약하기/예약내역 페이지">
+                <h4>예약하기/예약내역</h4>
+              </div>
+              <img src="img/icon/icon-arrow-right.svg" alt="오른쪽 방향키">
+            </a>
+          </div>
+          <div class="con-02">
+            <a href="sub/bills/bill_01.html">
+              <div class="con-tit">
+                <img src="img/icon/icon-money.svg" alt="청구/입금 페이지">
+                <h4>청구/입금내역</h4>
+              </div>
+              <img src="img/icon/icon-arrow-right.svg" alt="오른쪽 방향키">
+            </a>
+          </div>
+          <div class="con-03">
+            <a href="sub/serviceRecords/service.html">
+              <div class="con-tit">
+                <img src="img/icon/icon-service.svg" alt="급여내역 페이지">
+                <h4>급여제공기록지</h4>
+              </div>
+              <img src="img/icon/icon-arrow-right.svg" alt="오른쪽 방향키">
+            </a>
+          </div>
+          <div class="con-04">
+            <a href="#">
+              <div class="con-tit">
+                <img src="img/icon/icon-activity.svg" alt="예약하기/예약내역 페이지">
+                <h4>활동일지</h4>
+              </div>
+              <img src="img/icon/icon-arrow-right.svg" alt="오른쪽 방향키">
+            </a>
+          </div>
+          <div class="con-05">
+            <a href="#">
+              <div class="con-tit">
+                <img src="img/icon/icon-notice-bl.svg" alt="예약하기/예약내역 페이지">
+                <h4>공지사항</h4>
+              </div>
+              <img src="img/icon/icon-arrow-right.svg" alt="오른쪽 방향키">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 알림페이지 -->
+    <div class="alram">
+      <div class="tit-left">
+        <button class="clear"><img src="img/icon/icon-arrow-left.svg" alt="뒤로가기"></button>
+        <h2>알림</h2>
+      </div>
+      <div class="inner">
+        <div class="today-alram">
+          <h3>오늘 받은 알림</h3>
+          <div class="alram-box">
+            <div class="alram-top">
+              <h4>[공지]</h4>
+              <div class="alram-right">
+                <small>3시간전</small>
+                <button class="btn-more">
+                  <img src="img/icon/icon-more.svg" alt="더보기 버튼">
+                </button>
+              </div>
+            </div>
+            <strong><a href="#">2024년도 1분기 정기소독 실시 하였습니다.</a></strong>
+          </div>
+        </div>
+        <div class="before-alram">
+          <h3>이전 알림</h3>
+          <div class="alram-box active">
+            <div class="alram-top">
+              <h4>[공지]</h4>
+              <div class="alram-right">
+                <small>3시간전</small>
+                <button class="btn-more">
+                  <img src="img/icon/icon-more.svg" alt="더보기 버튼">
+                </button>
+              </div>
+            </div>
+            <strong><a href="#">2024년도 1분기 정기소독 실시 하였습니다.</a></strong>
+          </div>
+          <div class="alram-box">
+            <div class="alram-top">
+              <h4>[공지]</h4>
+              <div class="alram-right">
+                <small>3시간전</small>
+                <button class="btn-more">
+                  <img src="img/icon/icon-more.svg" alt="더보기 버튼">
+                </button>
+              </div>
+            </div>
+            <strong><a href="#">2024년도 1분기 정기소독 실시 하였습니다.</a></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 알림 삭제화면 -->
+    <div class="cancle-bg"></div>
+    <div class="cancle-con">
+      <h2>삭제하기</h2>
+      <p>삭제 하시겠습니까?</p>
+      <div class="button">
+        <button class="no">취소</button>
+        <button class="yes">확인</button>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
